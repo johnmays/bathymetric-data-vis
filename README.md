@@ -8,3 +8,5 @@ This is for nefarious, unkind, and downright evil purposes.
 - Jupyter
 ### Data:
 [Bathymetric data](https://emodnet.ec.europa.eu/en/emodnet-web-service-documentation#data-download-services) collected & published by the European Commission's European Marine Observation and Data Network.
+### Resources:
+[Paradis' R Tutorial](https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf)
