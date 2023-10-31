@@ -33,5 +33,8 @@ A server on their end will do some work, and then you should have a JSON, or a T
 ### How do you know how to fetch data?
 On the _OWS_ [page I keep referencing](https://emodnet.ec.europa.eu/en/emodnet-web-service-documentation#data-download-services), they list a bunch of calls you can make to the server to show capabilities in an XML metadata format for some reason.  BUT, [these example R notebooks](https://github.com/EMODnet/Web-Service-Documentation/tree/main) that _EMODnet_ compiled give a lot of guidance as well.
 
+### Difficulties with tutorial and modern R:
+Several of the spatial data packages used in the [_EMODnet_ _OWS_ tutorial](https://github.com/EMODnet/Web-Service-Documentation/tree/main/R-tutorial), such as `rgdal` and `maptools` are out-of-maintenance or not on C.R.A.N. anymore.  Some of their functionality has been absorbed into `terra` (kind of a master geospatial library) and `sf`.  Most of the functionality seems to remain, but switching over from the methods they used is somewhat difficult because they just handle data with different R objects, etc.  Just be warned that certain functions like `rgdal::readOGR()` are replaced by methodes like `terra::vect()`.
+
 # Other Resources:
 [Paradis' R Tutorial](https://cran.r-project.org/doc/contrib/Paradis-rdebuts_en.pdf)
