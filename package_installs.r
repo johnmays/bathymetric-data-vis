@@ -1,6 +1,7 @@
 # A script to perform the proper R library installs needed for this project.
 
 # Mandatory:
+install.packages("IRkernel") # for using R kernel with jupyter
 install.packages("XML") # for looking at XML format data
 install.packages("ncdf4") # interface to files written in netCDF format
 install.packages("sp") # spatial data helpers
