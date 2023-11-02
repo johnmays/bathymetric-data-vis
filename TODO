@@ -3,4 +3,5 @@ Stuff to try:
 ✔ plot with ggplot @done(23-11-01 22:21)
 ✔ perhaps keep to GeoJSON and stay away from SpatVector?? @done(23-11-01 22:21)
 ☐ look at tutorial and see if we did anything wrong with WFS
-☐ Figure out how to cache workspace variables in order to not overload the server with the same requests
+✔ Figure out how to cache workspace variables in order to not overload the server with the same requests @done(23-11-01 23:57)
+☐ redo header markdown for the test notebooks
