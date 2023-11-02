@@ -22,8 +22,12 @@ _The European Commission_ (a governing body in the European Union) funds/organiz
 The _EMODnet_ _OWS_ has quite a few different types of data download services available.  This repository takes advantage of just two:
 ### _Web Coverage Service (WCS):_
 The _**Web Coverage Service (WCS)_ is an implementation of data accessible over the internet.  It is called _WCS_ because it complies with the _Open Geospatial Consortium (OGC)'s_ extremely complicated requirements to be a _WCS._  The _OGC_ is some kind of cooperative entity that is supposed to create standards to make geospatial data more accessible.  _EMODnet_ has some data that is only available through their _WCS,_ like raster data. [See link.](https://emodnet.ec.europa.eu/en/emodnet-web-service-documentation#data-download-services)
+#### Example:
+![Example of figure made with WCS data](assets/wcs_out.png)
 ### _Web Feature Service (WFS):_
 The _**Web Feature Service (WFS)_ is different implementation of data accessible over the internet.  It is called _WFS_ because it complies with the _OGC's_ extremely complicated requirements to be a _WFS._  Again, certain data is only accessible through the _WFS,_ like features and vector data. [See link.](https://emodnet.ec.europa.eu/en/emodnet-web-service-documentation#data-download-services)
+#### Example:
+![Example of figure made with WFS data](assets/wfs_out.png)
 ## Fetching Data:
 Using _WFS_ and _WCS_ are very similar.  You pass all of the input data to the service via a URL.  This is data such as coordinates to specify the area you'd like the data for, resolution, service type, file format, etc.  Here is an example _WCS_ request:
 
