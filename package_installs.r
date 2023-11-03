@@ -11,8 +11,5 @@ install.packages("ggplot2") # for plotting
 install.packages("raster")
 install.packages("rasterVis") # for plotting raster data
 install.packages("directlabels") # for labeling plots
-
-
-# Considering/Optional:
-# install.packages("tidyr")
-# install.packages("dplyr") # dataframe manipulation
+install.packages("reshape2") # some df manipulation functions
+install.packages("viridis") # some matplotlib colormaps ported to R
