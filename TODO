@@ -10,3 +10,11 @@ Contour Notebook:
 ✔ settle on a basin @done(23-11-03 06:45)
 ✔ write about how drop depth is still debated & why I should just choose a good-looking basin @done(23-11-03 06:45)
 ✔ test exporting matrix to png (before writting generate fn) @done(23-11-03 06:40)
+
+Utils:
+✔ don't just add alpha, add code to add RGB, because these PNGs are all (gray, alpha) @done(23-11-03 19:43)
+
+Extras:
+☐ add R package with github packages??
+☐ clean up notebook
+☐ revise README with new information
