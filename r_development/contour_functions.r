@@ -96,3 +96,58 @@ stitch_tiles <- function(xmin, xmax, ymin, ymax, tile_size = 2.5, res = 100) {
   cat("Finished")
   return(stitched_img)
 }
+
+basin_delete_mapping <- function(p, basin_depth) {
+  if (is.na(p) || (p < basin_depth)) {
+    return(NaN)
+  } else {
+    return(p)
+  }
+}
+
+basin_test <- function(img, basin_depth) {
+  img_copy <- apply(img, c(1, 2),
+                    function(p) basin_delete_mapping(p, basin_depth))
+  # create df from image for plotting
+  df_img_copy <- melt(apply(img_copy, c(2), rev), varnames = c("y", "x"),
+                 value.name = "z")
+  # specify plot dimensions:
+  options(repr.plot.width = 24, repr.plot.height = 10)
+  # specify plot elements:
+  print("Drawing")
+  map <- ggplot(aes(x = x, y = y, z = z), data = df_img_copy) +
+  geom_raster(aes(fill = z)) +
+  scale_fill_viridis(option = "A", direction = -1) + # magma colormap
+  ggtitle("Depth Preview: Entire Mediterranean") +
+  xlab("x(pixel)") +
+  ylab("y(pixel)") +
+  theme_bw()
+  return(map)
+}
+
+contour_layer_mapping <- function(p, contour_depth) {
+  if (is.na(p) || (p < contour_depth)) {
+    return(0)
+  } else {
+    return(1)
+  }
+}
+
+generate_contours <- function(img, num_contours = 8, basin_depth =  1500) {
+  # This function exports a series of fills (as PNGs) for areas of successive
+  # depth in the bathymetric input data (img)
+  export_dir <- "../exports/"
+  base_file_name <- "_contour.png"
+
+  step_size <- basin_depth / num_contours
+  contour_depths <- seq(0, basin_depth, step_size)
+  p_bar <- txtProgressBar(style = 3)
+  for (depth in contour_depths) {
+    temp_img <- apply(img, c(1, 2), function(x) contour_layer_mapping(x, depth))
+    filename <- paste(export_dir, sprintf("%04d", floor(depth)),
+                      base_file_name, sep = "")
+    writePNG(temp_img, target = filename)
+    setTxtProgressBar(p_bar, depth / basin_depth)
+  }
+  close(p_bar)
+}

@@ -7,6 +7,6 @@ General:
 ☐ redo header markdown for the test notebooks
 
 Contour Notebook:
-☐ settle on a basin
-☐ write about how drop depth is still debated & why I should just choose a good-looking basin
-☐ test exporting matrix to png (before writting generate fn)
+✔ settle on a basin @done(23-11-03 06:45)
+✔ write about how drop depth is still debated & why I should just choose a good-looking basin @done(23-11-03 06:45)
+✔ test exporting matrix to png (before writting generate fn) @done(23-11-03 06:40)
