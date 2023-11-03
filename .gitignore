@@ -8,3 +8,6 @@
 # R data cache:
 **/rcache/
 
+# Python:
+**/__pycache__/
+
