@@ -6,5 +6,5 @@
 .DS_Store?
 
 # R data cache:
-/rcache/
+**/rcache/
 
