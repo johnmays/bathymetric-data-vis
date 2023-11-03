@@ -1,7 +1,12 @@
-Stuff to try:
-☐ request certain elevation separations
+General:
+✘ request certain elevation separations @cancelled(23-11-03 05:35)
 ✔ plot with ggplot @done(23-11-01 22:21)
 ✔ perhaps keep to GeoJSON and stay away from SpatVector?? @done(23-11-01 22:21)
-☐ look at tutorial and see if we did anything wrong with WFS
+✘ look at tutorial and see if we did anything wrong with WFS @started(23-11-03 05:33) @cancelled(23-11-03 05:35) @wasted(2m26s)
 ✔ Figure out how to cache workspace variables in order to not overload the server with the same requests @done(23-11-01 23:57)
 ☐ redo header markdown for the test notebooks
+
+Contour Notebook:
+☐ settle on a basin
+☐ write about how drop depth is still debated & why I should just choose a good-looking basin
+☐ test exporting matrix to png (before writting generate fn)
