@@ -13,3 +13,4 @@ install.packages("rasterVis") # for plotting raster data
 install.packages("directlabels") # for labeling plots
 install.packages("reshape2") # some df manipulation functions
 install.packages("viridis") # some matplotlib colormaps ported to R
+install.packages("png")
