@@ -3,7 +3,7 @@ The code in this repo approximately maps how the Mediterranean Sea shrunk during
 # Why:
 I'd like to learn R, and to learn a bit more about geospatial data.  If I'm a data scientist, it's about time I learn some R, and if I'd like to do work concerning the environment, then it's about time I learn how to work with geospatial data.  I'd also like to have some high-resolution images of the Mediterranean sinking for the logo for another project (@Salinity-Crisis-Interactive).
 # Code Information:
-The real work of this project exists in the notebook `./wcs_contour_functions.ipynb` and `contour_funnctions.r`. Also, there are some post-processing functions in `./util/`.  
+The real work of this project exists in the notebook `./wcs_contour_functions.ipynb` and `./contour_funnctions.r`. Also, there are some post-processing functions in `./util/`.  
 
 The rest of the scripts in `./r_tutorial/` and `./r_development/` were just used to explore tools and create some interesting figures.
 # Stack:
